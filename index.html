@@ -1,17 +1,22 @@
 <BODY>
-    <article id="privacy" />
+    <article id="privacy"></article>
 
     <script>
-        fetch('https://5ifoooqxyo.microcms.io/api/v1/privacy’,
-            { headers: { "X-MICROCMS-API-KEY": "R1EyJq04nbljk3nsHPcMkgszHqSOGVZ1v7Hk" } })
+        fetch('https://5ifoooqxyo.microcms.io/api/v1/privacy',
+            {
+                headers: {
+                    "X-MICROCMS-API-KEY": "R1EyJq04nbljk3nsHPcMkgszHqSOGVZ1v7Hk"
+                }
+            })
             .then((res) => {
                 return res.json();
             })
             .then((json) => {
-                document.getElementById("privacy”).innerHTML = json.body;
+                document.getElementById("privacy").innerHTML = json.body;
             })
             .catch((reason) => {
                 console.log(reason);
             });
     </script>
 </BODY>
+
