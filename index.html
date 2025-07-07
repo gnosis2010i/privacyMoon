@@ -1,14 +1,14 @@
 <BODY>
-    <article id="privacypolicy" />
+    <article id="privacy" />
 
     <script>
-        fetch('https://moonphase.microcms.io/api/v1/privacypolicy’,
-            { headers: { "X-MICROCMS-API-KEY": "XjcbjypUg9MaPMGXja2PEy1DE9cHuOAvWx70" } })
+        fetch('https://5ifoooqxyo.microcms.io/api/v1/privacy’,
+            { headers: { "X-MICROCMS-API-KEY": "R1EyJq04nbljk3nsHPcMkgszHqSOGVZ1v7Hk" } })
             .then((res) => {
                 return res.json();
             })
             .then((json) => {
-                document.getElementById("privacypolicy”).innerHTML = json.body;
+                document.getElementById("privacy”).innerHTML = json.body;
             })
             .catch((reason) => {
                 console.log(reason);
